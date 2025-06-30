@@ -1,0 +1,12 @@
+name: Publish a Release
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  publish:
+    runs-on: ghcr.io/onthegomap/planetiler:latest
+    timeout-minutes: 300
+    permissions:
+      contents: write
+    steps:
+    - run: ./run.sh
