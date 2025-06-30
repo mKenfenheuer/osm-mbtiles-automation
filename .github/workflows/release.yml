@@ -5,7 +5,7 @@ on:
 jobs:
   publish:
     runs-on: ghcr.io/onthegomap/planetiler:latest
-    timeout-minutes: 300
+    timeout-minutes: 3
     permissions:
       contents: write
     steps:
